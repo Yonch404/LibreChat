@@ -16,7 +16,7 @@ const staticAtoms = {
 
 const localStorageAtoms = {
   // General settings
-  autoScroll: atomWithLocalStorage('autoScroll', false),
+  autoScroll: atomWithLocalStorage('autoScroll', true),
   sidebarExpanded: atomWithLocalStorage(
     'unifiedSidebarExpanded',
     typeof window !== 'undefined' && window.matchMedia('(max-width: 768px)').matches ? false : true,
